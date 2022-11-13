@@ -8,6 +8,11 @@ header {
     background: no-repeat lightgrey url(images/cliff_ocean.jpg);
     background-size: 1500px;
 }
+#cliffs header{
+    background: no-repeat lightgrey url(images/forest_cliff-1.jpeg);
+    background-size: 1500px;
+}
+
 #activities header {
     background: no-repeat lightgrey url(images/runfly.jpg);
     background-size: 1500px;
@@ -67,6 +72,9 @@ background-size: 1500px;
     padding-right: 50px;
     padding-bottom: 15px;
 }
+
+
+
 /* Partners */
 section {
     width: 100%;

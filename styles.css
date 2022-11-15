@@ -67,16 +67,11 @@ background-size: 1500px;
 /* Main */
 .main {
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 15px;
+    padding: 50px 50px 50px 15px;
 }
 
-
-
 /* Partners */
-section {
+section #partners {
     width: 100%;
     background-color: #4288C3;
 }
@@ -97,6 +92,7 @@ section #partners .partner img {
     width: 90px;
     height: 90px;
 }
+
 /* Footer */
 footer {
    width: 100%;
@@ -189,6 +185,7 @@ td:first-child {
     font-weight: bold;
     background: #BDE1FF;
 }
+
 /* Contact */
 
 legend {
@@ -267,3 +264,28 @@ textarea {
     height: 200px;
 }
 
+/* Contact */
+#cliffpics {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cliff h3{
+    background-color:#852B1B;
+    padding-top: 0.5em;
+    margin: 0;
+    text-align: center;  
+    color: #fff;
+    height: 2em;
+}
+
+.cliff {
+    width: 45%;
+    margin: 1em 1em 2em 1em;
+    display: inline-block;
+}
+
+.cliff img {
+   width: 100%;
+   height: auto;
+}

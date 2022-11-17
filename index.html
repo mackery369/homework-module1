@@ -102,8 +102,15 @@
             } else {
                 ampm = "AM";
             }
+            var time = hr + ":" + min + ":" + sec + " " + ampm;
+            document.getElementById("clock").innerText = time;
+            setInterval(currentTime,1000);
+            var utchr = d.getUTCHours();
+            var timeDiff;
+            var adjTimeDiff;
+            var timeZone;
         }
-        var time = hr + ":" + min + ":" + sec + " " + ampm;
+        currentTime();
     </script>
     </body>
 </html>

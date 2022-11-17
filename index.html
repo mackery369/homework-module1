@@ -88,6 +88,14 @@
             var min = d.getMinutes();
             var sec = d.getSeconds();
             var ampm;
+            
+            var utchr = d.getUTCHours();
+            var timeDiff;
+            timeDiff = utchr - hr; // difference between UTC and Current Time
+            var adjTimeDiff;
+
+            // 5,6,7,8
+            var timeZone;
 
             if (sec < 10) {
                 sec = "0" + sec;
@@ -103,14 +111,20 @@
             } else {
                 ampm = "AM";
             }
-            var time = hr + ":" + min + ":" + sec + " " + ampm;
+           
+            if (timeDiff == 5) {
+                timeZone = "EST";
+            } else if (timeDiff == 6) {
+                timeZone = "CST";
+            } else if (timeDiff == 7) {
+                timeZone = "MT";
+            } else {
+                timeZone = "PST";
+            }
+
+            var time = hr + ":" + min + ":" + sec + " " + ampm + " " + timeZone;
             document.getElementById("clock").innerText = time;
             setInterval(currentTime,1000);
-            
-            var utchr = d.getUTCHours();
-            var timeDiff;
-            var adjTimeDiff;
-            var timeZone;
         }
         currentTime();
     </script>

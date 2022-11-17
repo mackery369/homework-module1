@@ -31,7 +31,7 @@
             </div>
         </header>
         <section id="timeofday">
-            <span>Your Current Local Time: </span>
+            <span id ="clocktitle">Your Current Local Time:</span>
             <span id="clock"></span>
         </section>
         <div class="main">
@@ -88,6 +88,7 @@
             var min = d.getMinutes();
             var sec = d.getSeconds();
             var ampm;
+
             if (sec < 10) {
                 sec = "0" + sec;
             }

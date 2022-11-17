@@ -30,6 +30,10 @@
             </nav>
             </div>
         </header>
+        <section id="timeofday">
+            <span>Your Current Local Time: </span>
+            <span id="clock"></span>
+        </section>
         <div class="main">
             <h1 style="color: #9ed034">Introducing California's Greatest Cliffs</h1>
             <h3>What is so unique about California cliffs?</h3>
@@ -75,5 +79,16 @@
             </div>
         </footer>
     </div>
+    <!--JavaScript Codes-->
+    <script>
+        //Time data function
+        function currentTime() {
+            var d = new Date();
+            var hr = d.getHours();
+            var min = d.getMinutes();
+            var sec = d.getSeconds();
+            var ampm;
+        }
+    </script>
     </body>
 </html>

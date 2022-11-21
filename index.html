@@ -44,12 +44,12 @@
         <section>
             <ul id="partners">
                 <div class="partner">
-                    <li id="photo"><img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"></li>
-                    <li id="photo"><img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></li>
-                    <li id="photo"><img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure"></li>
-                    <li id="photo"><img src="images/partners/partner-collegetours.png" alt="Partner College Tours"></li>
-                    <li id="photo"><img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals"></li>
-                    <li id="photo"><img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"></li>
+                    <li id="partner"><img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"></li>
+                    <li id="partner"><img src="images/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></li>
+                    <li id="partner"><img src="images/partners/partner-campingadv.png" alt="Partner Camping Adventure"></li>
+                    <li id="partner"><img src="images/partners/partner-collegetours.png" alt="Partner College Tours"></li>
+                    <li id="partner"><img src="images/partners/partner-rentalbike.png" alt="Partner Bike Rentals"></li>
+                    <li id="partner"><img src="images/partners/partner-tourgroup.png" alt="Partner Tour Group"></li>
                 </div>
                 <!--<li class="partner">
                     <img src="images/partners/partner-bustour.png" alt="Partner Bus Tours"
@@ -135,25 +135,31 @@
             setInterval(currentTime,1000);
         }
         currentTime();
-    
-        //Partner Pictures
-        var photos = [];
-        var fileNames = [];
-        var imageList = [];
-        var image;
-        var openList = "<li id='photo'>";
-        var closeList = "</li>";
 
-        //Loop for partner photos
-        for (var i=0; i<6; i++){
-            fileNames.push("partner"+(i+1));
-            photos.push("<img src+'images/partners/"+fileNames[i]+".png'>");
-            image = openList +photos[i] + closeList;
-            imageList.push(image);
-        }
+            //Partner Pictures
+            var photos = [];
+            var fileNames = [];
+            var imageList = [];
+            var image;
+            var openList = "<li id='partner'>";
+            var closeList = "</li>";
 
-        //Displaying partner photos
-        document.getElementbyID("partners").innerHTML = imageList;
+            //Loop for partner photos
+            for (var i=0; i<6; i++){
+                fileNames.push("partner"+(i+1));
+                photos.push("<img src+'images/partners/"+fileNames[i]+".png'>");
+                image = openList + partner[i] + closeList;
+                imageList.push(image);
+            }
+
+            //Displaying partner photos
+            document.getElementbyID("partners").innerHTML = imageList;
+        
+        // var link = document.createElement('link');
+        // document.getElementsByTagName('section')[0].apendChild(link);
+        // link.rel= 'stylesheet';
+        // link.type = 'img/css';
+        // link.href = 'styles.css';
     </script>
     </body>
 </html>
